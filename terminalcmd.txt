@@ -1,0 +1,7 @@
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python seeds/seed_exercises.py
+uvicorn app.main:app --reload
+
+http://localhost:8000/docs
